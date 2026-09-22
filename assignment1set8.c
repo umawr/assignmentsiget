@@ -1,7 +1,12 @@
-// SPPS SEM1 ASSIGNMENT1 SET8
 #include<stdio.h>
+#include<math.h>
+
+
 int main(void)
 {
+
+  //1. Write a C program to demonstrate Complex number arithmetic. 
+
   float r1, r2, i1, i2;
   char ch;
   printf("Enter 1st complex number real imaginary\n");
@@ -10,6 +15,8 @@ int main(void)
   scanf("%f %f", &r2, &i2);
   printf("Enter your operator\n");
   scanf(" %c", &ch);// use 'space' %c bcz %c read \n as the char
+
+  
 
   switch (ch)
   {
@@ -22,6 +29,12 @@ int main(void)
   case '*':
     printf("Product of them id %.2f %+.2fi\n", r1*r2 - i1*i2, r1*i2 - i1*r2);
     break;
+  case '/':
+    {
+    float denom = (pow(r2, 2)+pow(r1, 2));
+    printf("Quotient of them is %+.2f %+.2fi\n", (r1*r2 + i1*i2)/denom, (i1*r2 - r1*i2)/denom);
+    break;
+    }
   default:
     printf("Invalid operator!!\n");
     break;
