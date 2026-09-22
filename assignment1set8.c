@@ -15,9 +15,7 @@ int main(void)
   scanf("%f %f", &r2, &i2);
   printf("Enter your operator\n");
   scanf(" %c", &ch);// use 'space' %c bcz %c read \n as the char
-
-  
-
+  printf("\nCalculating %.2f %+.2fi %c %.2f %+.2fi\n\n", r1, i1, ch, r2, i2);
   switch (ch)
   {
   case '+':
@@ -27,12 +25,12 @@ int main(void)
     printf("Difference between them is %.2f %+.2fi\n", r1-r2, i1-i2);
     break;
   case '*':
-    printf("Product of them id %.2f %+.2fi\n", r1*r2 - i1*i2, r1*i2 - i1*r2);
+    printf("Product of them is %.2f %+.2fi\n", r1*r2 - i1*i2, r1*i2 - i1*r2);
     break;
   case '/':
     {
     float denom = (pow(r2, 2)+pow(r1, 2));
-    printf("Quotient of them is %+.2f %+.2fi\n", (r1*r2 + i1*i2)/denom, (i1*r2 - r1*i2)/denom);
+    printf("Quotient of them is %.2f %+.2fi\n", (r1*r2 + i1*i2)/denom, (i1*r2 - r1*i2)/denom);
     break;
     }
   default:
