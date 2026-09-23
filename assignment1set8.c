@@ -45,7 +45,7 @@
 int main(void)
 {
 
-  //3. Make a program that prints stars from descinding to ascending order based on the number input using loops.
+  //4b. Make a program that prints stars from descinding to ascending order based on the number input using loops.
 
   int n, i, j, k;
   printf("Enter a positive number\n");
