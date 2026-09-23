@@ -3,12 +3,9 @@
 #include<stdio.h>
 #include<math.h>
 
-
+//1. Write a C program to demonstrate Complex number arithmetic. 
 // int main(void)
 // {
-
-//   //1. Write a C program to demonstrate Complex number arithmetic. 
-
 //   float r1, r2, i1, i2;
 //   char ch;
 //   printf("Enter 1st complex number real imaginary\n");
@@ -42,23 +39,48 @@
 //   return 0;
 // }
 
+//4b. Make a program that prints a pyramid of stars from descinding to ascending order based on the number input using loops.
+
+// int main(void)
+// {
+//   int n, i, j, k;
+//   printf("Enter a positive number\n");
+//   scanf("%d",&n);
+//   for(j=1; j <= n; j++)
+//   {
+//     for(k=1; k < j; k++)
+//       printf(" ");
+//     for (i = n; i >= j; i--)
+//     {
+//       printf("*");
+//     }
+//     printf("\n");
+//   }
+//   return 0;
+// }
+
+//4a. Make a program that prints a half pyramid of numbers from ascending to descending order based on the number input using loops.
+
+// int main(void)
+// {
+//  int n, i, j;
+//  printf("Enter an integer\n");
+//  scanf("%d",&n);
+//  for(i=1; i <= n; i++)
+//   {
+//     for (j = 1; j <= i; j++)
+//     {
+//       printf("%d ", i);
+//     }
+//     printf("\n");
+//   }
+//  return 0;
+// }
+
 int main(void)
 {
-
-  //4b. Make a program that prints stars from descinding to ascending order based on the number input using loops.
-
-  int n, i, j, k;
-  printf("Enter a positive number\n");
+  int n, i, j;
+  printf("Enter a number\n");
   scanf("%d",&n);
-  for(j=1; j <= n; j++)
-  {
-    for(k=1; k < j; k++)
-      printf(" ");
-    for (i = n; i >= j; i--)
-    {
-      printf("*");
-    }
-    printf("\n");
-  }
-  return 0;
-}  
+  
+}
