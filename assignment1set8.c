@@ -77,10 +77,14 @@
 //  return 0;
 // }
 
+//3. Write a C program to print the right most digit of an integer. 
+
 int main(void)
 {
-  int n, i, j;
+  long long int n;
+  int right;
   printf("Enter a number\n");
-  scanf("%d",&n);
-  
+  scanf("%lld",&n);
+  right = n % 10;
+  printf("%d\n", right);
 }
