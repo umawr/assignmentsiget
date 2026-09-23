@@ -79,12 +79,24 @@
 
 //3. Write a C program to print the right most digit of an integer. 
 
-int main(void)
-{
-  long long int n;
-  int right;
-  printf("Enter a number\n");
-  scanf("%lld",&n);
-  right = n % 10;
-  printf("%d\n", right);
-}
+// int main(void)
+// {
+//   long long int n;
+//   int right;
+//   printf("Enter a number\n");
+//   scanf("%lld",&n);
+//   right = n % 10;
+//   printf("%d\n", right);
+// }
+
+//5. Write a C program to convert radians to degre
+
+// int main(void)
+// {
+//   float r, d;
+//   printf("Enter measurement in radians\n");
+//   scanf("%f", &r);
+//   d = r*180/3.14;
+//   printf("%.2f in degrees is %.2f\n", r, d);
+//   return 0;
+// }
