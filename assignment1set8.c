@@ -39,24 +39,16 @@
 //   return 0;
 // }
 
-//4b. Make a program that prints a pyramid of stars from descinding to ascending order based on the number input using loops.
+//3. Write a C program to print the right most digit of an integer. 
 
 // int main(void)
 // {
-//   int n, i, j, k;
-//   printf("Enter a positive number\n");
-//   scanf("%d",&n);
-//   for(j=1; j <= n; j++)
-//   {
-//     for(k=1; k < j; k++)
-//       printf(" ");
-//     for (i = n; i >= j; i--)
-//     {
-//       printf("*");
-//     }
-//     printf("\n");
-//   }
-//   return 0;
+//   long long int n;
+//   int right;
+//   printf("Enter a number\n");
+//   scanf("%lld",&n);
+//   right = n % 10;
+//   printf("%d\n", right);
 // }
 
 //4a. Make a program that prints a half pyramid of numbers from ascending to descending order based on the number input using loops.
@@ -77,16 +69,24 @@
 //  return 0;
 // }
 
-//3. Write a C program to print the right most digit of an integer. 
+//4b. Make a program that prints a pyramid of stars from descinding to ascending order based on the number input using loops.
 
 // int main(void)
 // {
-//   long long int n;
-//   int right;
-//   printf("Enter a number\n");
-//   scanf("%lld",&n);
-//   right = n % 10;
-//   printf("%d\n", right);
+//   int n, i, j, k;
+//   printf("Enter a positive number\n");
+//   scanf("%d",&n);
+//   for(j=1; j <= n; j++)
+//   {
+//     for(k=1; k < j; k++)
+//       printf(" ");
+//     for (i = n; i >= j; i--)
+//     {
+//       printf("*");
+//     }
+//     printf("\n");
+//   }
+//   return 0;
 // }
 
 //5. Write a C program to convert radians to degre
@@ -100,3 +100,39 @@
 //   printf("%.2f in degrees is %.2f\n", r, d);
 //   return 0;
 // }
+
+//9. Write a C program that implements a program to count the number of digits in a given integer using a do-while lo
+
+// int main(void)
+// {
+//   int n, count, digit, total = 0;
+//   printf("Enter a number\n");
+//   scanf("%d", &n);
+
+//   do {
+
+//     digit = n % 10;
+//     n /= 10;
+//     count = printf("%d\n", digit);
+//     total = total + (count -1);
+
+//   } while(n > 0);
+
+//   printf("Total is %d", total);
+  
+//   return 0;
+// }
+
+//10. Write a program in C to display the n terms of a harmonic series and their sum.
+
+int main(void)
+{
+  int n, i;
+  printf("Enter your number\n");
+  scanf("%d", &n);
+  for(i =1; i <= n; i++)
+  {
+    printf("1/%d + ", i);
+  }
+  return 0;
+}
