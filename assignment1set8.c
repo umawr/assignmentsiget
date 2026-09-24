@@ -125,14 +125,20 @@
 
 //10. Write a program in C to display the n terms of a harmonic series and their sum.
 
-int main(void)
-{
-  int n, i;
-  printf("Enter your number\n");
-  scanf("%d", &n);
-  for(i =1; i <= n; i++)
-  {
-    printf("1/%d + ", i);
-  }
-  return 0;
-}
+// int main(void) {
+//     int n, i;
+//     float count = 0.0;
+    
+//     printf("Enter your number: ");
+//     scanf("%d", &n);
+    
+//     for(i = 1; i <= n; i++) {
+//         printf("1/%d", i);        
+//         count += 1.0 / i;
+//         if (i < n) {
+//             printf(" + ");
+//         }
+//     }
+//     printf("\nTotal is %.4f\n", count);
+//     return 0;
+// }
