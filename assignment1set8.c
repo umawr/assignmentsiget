@@ -101,6 +101,49 @@ int main(void)
   return 0;
 }
 
+//7. Write a C program to print Armstrong number between 2 intervals 
+
+int main(void)
+{
+  int a,q, b, i, number, count =0, result=0, multiply=1, cnt, rem;
+  printf("Enter a number interval\n");
+  scanf("%d %d", &a, &b);
+  
+for (i = a; i <= b; i++)
+{
+  q = i;
+  while(q!=0)
+  {
+    q = q/10;
+    count++;
+  }
+  
+  cnt = count;
+  q = i;
+  while(q!=0)
+  {
+    rem = q%10;
+    while(cnt != 0)
+    {
+      multiply = multiply*rem;
+      cnt--;
+    }
+    result= result+ multiply;
+    cnt = count;
+    q = q/10;
+    multiply=1;
+  }
+
+  if (result == i)
+    printf("%d is an Armstrong number\n", i);
+  else ;
+  count =0;
+  result =0;
+  multiply =1;
+}  
+  return 0;
+}
+
 //9. Write a C program that implements a program to count the number of digits in a given integer using a do-while lo
 
 int main(void)
