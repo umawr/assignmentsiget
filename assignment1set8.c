@@ -139,7 +139,6 @@ for (i = a; i <= b; i++)
   else ;
   count =0;
   result =0;
-  multiply =1;
 }  
   return 0;
 }
